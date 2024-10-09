@@ -43,3 +43,30 @@ const myFunction=function()
 {
     console.log(" hello ");
 }
+
+
+// stack( premitive ) and heap( non prem)
+
+// here copy is shared // stack memory
+
+ let names= " shivam "
+ let anname =names
+  anname="sam"
+  console.log(names);
+  
+  console.log(anname);
+
+  // heap memory direct memory  no copy 
+ let userOne=  {    // in  stack 
+    email:"shivam@gmail.com",
+    namess:"shivam"                    //stored in heap
+
+ }
+ let userTwo=userOne
+
+ userTwo.email="Saini@gmail.com"    // isse dono ki email change ho jaye gi bcs wo heap mai store h aur dono ko same pointer ja reha h
+
+ console.log(userOne.email);
+ console.log(userTwo.email);
+ 
+ 
